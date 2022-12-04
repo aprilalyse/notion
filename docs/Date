@@ -1,0 +1,20 @@
+// Create a new date object
+var currentDate = new Date();
+
+// Set the font style for the date and time display
+var fontStyle = 'font-family: "sans-serif"; color: orange;';
+
+// Set the background color for the widget
+var backgroundStyle = 'background-color: blue;';
+
+// Create the widget container
+var widget = document.createElement('div');
+
+// Set the widget styles
+widget.style = fontStyle + backgroundStyle;
+
+// Add the current date and time to the widget
+widget.innerHTML = currentDate.toLocaleDateString() + ' ' + currentDate.toLocaleTimeString();
+
+// Append the widget to the page
+document.body.appendChild(widget);
